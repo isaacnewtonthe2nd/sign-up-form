@@ -19,34 +19,50 @@
   </div>
 
   <div class="right-container">
-    <p>This holiday season, gift yourself the wonder of the cosmos! Join Alvearium and explore celestial events, learn about winter constellations, and discover the magic of the universe. Whether it's snowy nights by the telescope or cozying up with astronomy guides, Alvearium is your perfect holiday companion.</p>
-    <p>Sign up now and make your holiday season truly <em>out of this world!</em></p>
+    <div class="description">
+      <p>This holiday season, gift yourself the wonder of the cosmos! Join Alvearium and explore celestial events, learn about winter constellations, and discover the magic of the universe.</p>
+      <p>Sign up now and make your holiday season truly <em>out of this world!</em></p>
+    </div>
 
-    <form action="">
+    <form action="" class="form" id="the-form">
       <h3>Let's explore the Universe</h3>
   
-      <label for="first-name">FIRST NAME</label>
-      <input type="text" id="first-name" name="first-name" placeholder="Johannes">
+      <div class="inputs">
+        <div>
+          <label for="first-name">FIRST NAME</label>
+          <input type="text" id="first-name" name="first-name" placeholder=" Johannes" required>
+        </div>
 
-      <label for="last-name">LAST NAME</label>
-      <input type="text" id="last-name" name="last-name" placeholder="Kepler">
+        <div>
+          <label for="last-name">LAST NAME</label>
+          <input type="text" id="last-name" name="last-name" placeholder=" Kepler" required>
+        </div>
 
-      <label for="email">EMAIL</label>
-      <input type="email" id="email" name="email">
+        <div>
+          <label for="email">EMAIL</label>
+          <input type="email" id="email" name="email" required>
+        </div>
 
-      <label for="phone-number">PHONE NUMBER</label>
-      <input type="number" id="phone-number" name="phone-number" placeholder="8001234567">
+        <div>
+          <label for="phone-number">PHONE NUMBER</label>
+          <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder=" 800-123-4567">
+        </div>
 
-      <label for="password">PASSWORD</label>
-      <input type="password" id="password" name="password" required minlength="8">
+        <div>
+          <label for="password">PASSWORD</label>
+          <input type="password" id="password" name="password" required minlength="8">
+        </div>
 
-      <label for="password-confirm">CONFIRM PASSWORD</label>
-      <input type="password" id="password-confirm" name="password-confirm" required>
-
-      <button type="submit">Create Account</button>
+        <div>
+          <label for="password-confirm">CONFIRM PASSWORD</label>
+          <input type="password" id="password-confirm" name="password-confirm" required minlength="8">
+        </div>
+      </div>
     </form>
 
-    <p>Already have an account? <a href="https://www.nasa.gov/">Log in?</a></p>
+    <button type="submit" form="the-form">Create Account</button>
+
+    <p class="log-in">Already have an account? <a href="https://www.nasa.gov/" target="_blank">Log in?</a></p>
   </div>
 
   <script src="script.js"></script>
