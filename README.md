@@ -1,1 +1,3 @@
 # sign-up-form
+
+This project is to test my new skills on forms, pseudo classes and elements, css units, and so on. This project was constructed using html and css only. It is only a design excercise and not interactive. The brand used is a dummy brand I made up in my head. As I occasionally  mention, there is always room for improvement and I plan on revisiting this project to refine it. As for now, I would say, this project is a success.
